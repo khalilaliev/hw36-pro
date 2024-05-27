@@ -16,7 +16,111 @@
       </div>
     </div>
     <div class="container">
-      <h1 class="text-center mt-7 text-4xl">Sign up</h1>
+      <div>
+        <div class="mx-auto mt-7 flex w-full max-w-sm flex-col gap-6">
+          <div class="flex flex-col items-center">
+            <h1 class="text-3xl font-semibold">Sign Up</h1>
+          </div>
+          <div class="form-group">
+            <div class="form-field">
+              <label class="form-label">User name</label>
+
+              <div class="flex gap-4">
+                <input
+                  placeholder="First"
+                  type="email"
+                  class="input max-w-full"
+                />
+                <input
+                  placeholder="Last"
+                  type="email"
+                  class="input max-w-full"
+                />
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label">Date of Birth</label>
+
+              <input
+                placeholder="Type here"
+                type="email"
+                class="input max-w-full"
+              />
+            </div>
+            <div class="form-field w-full">
+              <label class="form-label">City</label>
+              <input
+                name="city"
+                list="cities"
+                class="input max-w-full"
+                placeholder="Select here"
+                id="city"
+                required
+              />
+              <datalist id="cities">
+                <option value="Kyiv" />
+                <option value="Kharkiv" />
+                <option value="Odesa" />
+                <option value="Dnipro" />
+                <option value="Zaporizhzhia" />
+                <option value="Kherson" />
+                <option value="Mykolaiv" />
+                <option value="Kryvyi Rih" />
+                <option value="Lviv" />
+              </datalist>
+            </div>
+            <div>
+              <label class="form-label mb-2">Address</label>
+              <textarea
+                class="textarea max-w-full"
+                name=""
+                id="textarea"
+                placeholder="Type here"
+              ></textarea>
+            </div>
+            <div class="form-field">
+              <label class="form-label">Language</label>
+              <div class="form-control justify-around">
+                <div>
+                  <label class="flex cursor-pointer gap-2">
+                    <input type="checkbox" class="checkbox" />
+                    <span>Ukrainian</span>
+                  </label>
+                </div>
+                <div>
+                  <label class="flex cursor-pointer gap-2">
+                    <input type="checkbox" class="checkbox" />
+                    <span>English</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label">Gender</label>
+              <div class="form-control justify-around">
+                <label class="flex cursor-pointer gap-2">
+                  <input type="radio" class="radio" />
+                  <span>Male</span>
+                </label>
+                <label class="flex cursor-pointer gap-2">
+                  <input type="radio" class="radio" />
+                  <span>Female</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-field">
+              <div class="form-control justify-between"></div>
+            </div>
+            <div class="form-field pt-5">
+              <div class="form-control justify-between">
+                <button type="button" class="btn btn-primary w-full">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
