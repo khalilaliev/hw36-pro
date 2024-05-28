@@ -16,122 +16,130 @@
       </div>
     </div>
     <div class="container">
-      <div id="formBox">
-        <div class="mx-auto mt-7 flex w-full max-w-sm flex-col gap-6">
-          <div class="flex flex-col items-center">
-            <h1 class="text-3xl font-semibold">Sign Up</h1>
-          </div>
-          <div class="form-group">
-            <div class="form-field">
-              <label class="form-label">User name</label>
+      <div id="infoBox">
+        <form id="formBox">
+          <div class="mx-auto mt-7 flex w-full max-w-sm flex-col gap-6">
+            <div class="flex flex-col items-center">
+              <h1 class="text-3xl font-semibold">Sign Up</h1>
+            </div>
+            <div class="form-group">
+              <div class="form-field">
+                <label class="form-label">User name</label>
 
-              <div class="flex gap-4">
-                <input
-                  placeholder="First"
-                  type="email"
-                  class="input max-w-full"
-                  id="userName"
-                />
-                <input
-                  placeholder="Last"
-                  type="email"
-                  class="input max-w-full"
-                />
-              </div>
-            </div>
-            <div class="form-field">
-              <label class="form-label">Date of Birth</label>
-
-              <input
-                placeholder="Type here"
-                type="email"
-                class="input max-w-full"
-              />
-            </div>
-            <div class="form-field w-full">
-              <label class="form-label">City</label>
-              <input
-                name="city"
-                list="cities"
-                class="input max-w-full"
-                placeholder="Select here"
-                id="city"
-                required
-              />
-              <datalist id="cities">
-                <option value="Kyiv" />
-                <option value="Kharkiv" />
-                <option value="Odesa" />
-                <option value="Dnipro" />
-                <option value="Zaporizhzhia" />
-                <option value="Kherson" />
-                <option value="Mykolaiv" />
-                <option value="Kryvyi Rih" />
-                <option value="Lviv" />
-              </datalist>
-            </div>
-            <div>
-              <label class="form-label mb-2">Address</label>
-              <textarea
-                class="textarea max-w-full"
-                name=""
-                id="textarea"
-                placeholder="Type here"
-              ></textarea>
-            </div>
-            <div class="form-field">
-              <label class="form-label">Language</label>
-              <div class="form-control justify-around">
-                <div>
-                  <label class="flex cursor-pointer gap-2">
-                    <input type="checkbox" class="checkbox" />
-                    <span>Ukrainian</span>
-                  </label>
-                </div>
-                <div>
-                  <label class="flex cursor-pointer gap-2">
-                    <input type="checkbox" class="checkbox" />
-                    <span>English</span>
-                  </label>
+                <div class="flex gap-4">
+                  <input
+                    placeholder="First"
+                    type="text"
+                    class="input max-w-full"
+                    id="userName"
+                    required
+                  />
+                  <input
+                    placeholder="Last"
+                    type="text"
+                    class="input max-w-full"
+                    id="lastName"
+                    required
+                  />
                 </div>
               </div>
-            </div>
-            <div class="form-field">
-              <label class="form-label">Gender</label>
-              <div class="form-control justify-around">
-                <label class="flex cursor-pointer gap-2">
-                  <input type="radio" class="radio" name="gender" />
-                  <span id="male">Male</span>
-                </label>
-                <label class="flex cursor-pointer gap-2">
-                  <input type="radio" class="radio" name="gender" />
-                  <span id="female">Female</span>
-                </label>
-              </div>
-            </div>
+              <div class="form-field">
+                <label class="form-label">Date of Birth</label>
 
-            <div class="form-field">
-              <div class="form-control justify-between"></div>
-            </div>
-            <div class="form-field pt-5">
-              <div class="form-control justify-between">
-                <button
-                  id="saveBtn"
-                  type="button"
-                  class="btn btn-primary w-full"
-                >
-                  Save
-                </button>
+                <input
+                  placeholder="Type here"
+                  type="text"
+                  class="input max-w-full"
+                  id="dateOfBirth"
+                  required
+                />
+              </div>
+              <div class="form-field w-full">
+                <label class="form-label">City</label>
+                <input
+                  name="city"
+                  list="cities"
+                  class="input max-w-full"
+                  placeholder="Select here"
+                  id="cityInput"
+                  required
+                />
+                <datalist id="cities">
+                  <option value="Kyiv" />
+                  <option value="Kharkiv" />
+                  <option value="Odesa" />
+                  <option value="Dnipro" />
+                  <option value="Zaporizhzhia" />
+                  <option value="Kherson" />
+                  <option value="Mykolaiv" />
+                  <option value="Kryvyi Rih" />
+                  <option value="Lviv" />
+                </datalist>
+              </div>
+              <div>
+                <label class="form-label mb-2">Address</label>
+                <textarea
+                  class="textarea max-w-full"
+                  name=""
+                  id="textarea"
+                  placeholder="Type here"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-field">
+                <label class="form-label">Language</label>
+                <div class="form-control justify-around">
+                  <div>
+                    <label class="flex cursor-pointer gap-2">
+                      <input type="checkbox" class="checkbox" required />
+                      <span>Ukrainian</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="flex cursor-pointer gap-2">
+                      <input type="checkbox" class="checkbox" />
+                      <span>English</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="form-label">Gender</label>
+                <div class="form-control justify-around">
+                  <label class="flex cursor-pointer gap-2">
+                    <input type="radio" class="radio" name="gender" required />
+                    <span id="male">Male</span>
+                  </label>
+                  <label class="flex cursor-pointer gap-2">
+                    <input type="radio" class="radio" name="gender" required />
+                    <span id="female">Female</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="form-control justify-between"></div>
+              </div>
+              <div class="form-field pt-5">
+                <div class="form-control justify-between">
+                  <button
+                    id="saveBtn"
+                    type="submit"
+                    class="btn btn-primary w-full"
+                  >
+                    Save
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
       <div id="table" class="flex mt-7 w-1/2 mx-auto">
         <table class="table">
           <tr>
             <th>Field</th>
-            <th>Data</th>
+            <th>Info</th>
           </tr>
           <tr>
             <td>First Name</td>
@@ -147,7 +155,7 @@
           </tr>
           <tr>
             <td>Address</td>
-            <td id="adress"></td>
+            <td id="address"></td>
           </tr>
           <tr>
             <td>City</td>
