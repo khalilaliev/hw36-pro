@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="container">
-      <div>
+      <div id="formBox">
         <div class="mx-auto mt-7 flex w-full max-w-sm flex-col gap-6">
           <div class="flex flex-col items-center">
             <h1 class="text-3xl font-semibold">Sign Up</h1>
@@ -30,6 +30,7 @@
                   placeholder="First"
                   type="email"
                   class="input max-w-full"
+                  id="userName"
                 />
                 <input
                   placeholder="Last"
@@ -99,27 +100,68 @@
               <label class="form-label">Gender</label>
               <div class="form-control justify-around">
                 <label class="flex cursor-pointer gap-2">
-                  <input type="radio" class="radio" />
-                  <span>Male</span>
+                  <input type="radio" class="radio" name="gender" />
+                  <span id="male">Male</span>
                 </label>
                 <label class="flex cursor-pointer gap-2">
-                  <input type="radio" class="radio" />
-                  <span>Female</span>
+                  <input type="radio" class="radio" name="gender" />
+                  <span id="female">Female</span>
                 </label>
               </div>
             </div>
+
             <div class="form-field">
               <div class="form-control justify-between"></div>
             </div>
             <div class="form-field pt-5">
               <div class="form-control justify-between">
-                <button type="button" class="btn btn-primary w-full">
+                <button
+                  id="saveBtn"
+                  type="button"
+                  class="btn btn-primary w-full"
+                >
                   Save
                 </button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div id="table" class="flex mt-7 w-1/2 mx-auto">
+        <table class="table">
+          <tr>
+            <th>Field</th>
+            <th>Data</th>
+          </tr>
+          <tr>
+            <td>First Name</td>
+            <td id="name"></td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td id="surname"></td>
+          </tr>
+          <tr>
+            <td>Date of Birth</td>
+            <td id="birth"></td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td id="adress"></td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td id="city"></td>
+          </tr>
+          <tr>
+            <td>Language</td>
+            <td id="language"></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td id="gender"></td>
+          </tr>
+        </table>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
